@@ -8,27 +8,27 @@
 # Stack: S
 
 # Explore any unvisited adjacent node from S. 
-# Adjacent nodes from S: A, B, and C, and we can pick any of them.
+# Adjacent nodes from S: A, B, and C. We can pick any of them.
 # Let's visit A and put it in the stack.
 # Stack: S, A
 
 # Explore any unvisited adjacent node from A. 
-# Adjacent nodes from A: S and D,but S is visited.
+# Adjacent nodes from A: S and D. But S is visited.
 # Let's visit D and put it in the stack.
 # Stack: S, A, D
 
 # Explore any unvisited adjacent node from D. 
-# Adjacent nodes from D: A, B and C, but A is visited and B,C are unvisited.
+# Adjacent nodes from D: A, B and C. But A is visited and B,C are unvisited.
 # Let's visit B and put it in the stack.
 # Stack: S, A, D, B
 
 # Explore any unvisited adjacent node from B.
-# Adjacent nodes from B: S and C but they are all visited.
+# Adjacent nodes from B: S and C. But they are all visited.
 # Remove B from the stack.
 # Stack: S, A, D
 
 # Explore any unvisited adjacent node from D. 
-# Adjacent nodes from D: B and C, but B is visited.
+# Adjacent nodes from D: B and C. But B is visited.
 # Let's visit C and put it in the stack.
 # Stack: S, A, D, C
 
@@ -104,3 +104,4 @@ g.addEdge(1,4)
 g.addEdge(2,4)
 g.addEdge(3,4)
 g.DFS()
+# 0,1,4,2,3
