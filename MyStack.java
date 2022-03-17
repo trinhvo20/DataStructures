@@ -25,11 +25,11 @@ class Node {
     }
 }
 
-class CustomStack {
+class MyStack {
     int length = 0;
     Node top = null;
 
-    public CustomStack() {
+    public MyStack() {
     }
 
     public int size() {
@@ -65,9 +65,9 @@ class CustomStack {
     }
 }
 
-class Main {
+class CustomStack {
     public static void main(String[] args) {
-        CustomStack mystack = new CustomStack();
+        MyStack mystack = new MyStack();
         System.out.println(mystack.isEmpty());
 
         mystack.push(5);
