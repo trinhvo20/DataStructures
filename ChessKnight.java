@@ -48,7 +48,7 @@ class ChessKnight {
 
     // Check if (x, y) is valid chessboard coordinates.
     // Note that a knight cannot go out of the chessboard
-    private static boolean isInsideTheChessBoard(int x, int y, int N) {
+    private static boolean isInsideChessboard(int x, int y, int N) {
         return (x >= 0 && x < N) && (y >= 0 && y < N);
     }
 
@@ -89,7 +89,7 @@ class ChessKnight {
                     int x1 = x + dx[i];
                     int y1 = y + dy[i];
 
-                    if (isInsideTheChessBoard(x1, y1, N)) {
+                    if (isInsideChessboard(x1, y1, N)) {
                         queue.add(new Node(x1, y1, dist + 1));
                     }
                 }
