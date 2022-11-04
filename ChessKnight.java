@@ -3,17 +3,17 @@
 // to reach a given destination from a given source.
 import java.util.*;
 
-class Node {
+class Cell {
     // (x, y) represents chessboard coordinates
     // `dist` represents its minimum distance from the source
     int x, y, dist;
 
-    public Node(int x, int y) {
+    public Cell(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public Node(int x, int y, int dist) {
+    public Cell(int x, int y, int dist) {
         this.x = x;
         this.y = y;
         this.dist = dist;
@@ -54,18 +54,18 @@ class ChessKnight {
 
     // Find the minimum number of steps taken by the knight
     // from the source to reach the destination using BFS
-    public static int findShortestDistance(Node src, Node dest, int N) {
+    public static int findShortestDistance(Cell src, Cell dest, int N) {
         // set to check if the matrix cell is visited before or not
-        Set<Node> visited = new HashSet<>();
+        Set<Cell> visited = new HashSet<>();
 
         // create a queue and enqueue the first node
-        Queue<Node> queue = new ArrayDeque<>();
+        Queue<Cell> queue = new ArrayDeque<>();
         queue.add(src);
 
         // loop till queue is empty
         while (!queue.isEmpty()) {
             // dequeue front node and process it
-            Node node = queue.poll();
+            Cell node = queue.poll();
 
             int x = node.x;
             int y = node.y;
@@ -90,7 +90,7 @@ class ChessKnight {
                     int y1 = y + dy[i];
 
                     if (isInsideChessboard(x1, y1, N)) {
-                        queue.add(new Node(x1, y1, dist + 1));
+                        queue.add(new Cell(x1, y1, dist + 1));
                     }
                 }
             }
@@ -105,10 +105,10 @@ class ChessKnight {
         int N = 8;
 
         // source coordinates
-        Node src = new Node(0, 7);
+        Cell src = new Cell(0, 7);
 
         // destination coordinates
-        Node dest = new Node(7, 0);
+        Cell dest = new Cell(7, 0);
 
         System.out.println("The minimum number of steps required is " +
                 findShortestDistance(src, dest, N));
