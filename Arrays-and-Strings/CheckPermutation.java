@@ -10,7 +10,7 @@ public class CheckPermutation {
     static String sort(String s) {
         char[] charArr = s.toCharArray();
         java.util.Arrays.sort(charArr);
-        String sortedStr = new String(charArr);
+        String sortedStr = new String(charArr); // build string from charArr
         return sortedStr;
     }
 
