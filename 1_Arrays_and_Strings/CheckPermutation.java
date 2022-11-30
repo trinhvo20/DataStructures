@@ -1,7 +1,7 @@
 // Given 2 strings, write a method to decide if one is permutation of the other.
 // Ex: 'god' = 'dog'
 
-public class CheckPermutation {
+class CheckPermutation {
     public static void main(String[] args) {
         System.out.println(isPermutation("dog", "god"));
     }

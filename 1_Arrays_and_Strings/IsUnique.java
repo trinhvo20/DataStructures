@@ -16,9 +16,10 @@ class isUnique {
         }
 
         boolean[] char_set = new boolean[128];
+
         for (int i = 0; i < str.length(); i++) {
             int value = str.charAt(i); // returns the character at the specified index in a string
-            System.out.println(value);
+            System.out.println(value); // this value is a number (Unicode value of a character)
             if (char_set[value] == true) { // Already found this character in string
                 return false;
             }
