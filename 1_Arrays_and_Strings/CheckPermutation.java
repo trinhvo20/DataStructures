@@ -1,3 +1,4 @@
+// 1.2
 // Given 2 strings, write a method to decide if one is permutation of the other.
 // Ex: 'god' = 'dog'
 

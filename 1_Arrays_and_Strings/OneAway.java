@@ -1,5 +1,4 @@
-import javax.swing.text.StyledEditorKit.BoldAction;
-
+// 1.5
 // Operation on strings: insert a character, remove a character, or replace a character.
 // Given 2 strings write a function to check if they are one edit (or zero edit) away.
 

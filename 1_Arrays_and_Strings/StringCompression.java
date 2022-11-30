@@ -1,3 +1,4 @@
+// 1.6
 // Write a method to perform basic compression using the counts of repeated characters.
 // EX: aabcccccaaa would become a2b1c5a3
 // If the compressed string is longer than the original string, return the original string
